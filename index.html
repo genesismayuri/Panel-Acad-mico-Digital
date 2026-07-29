@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Académico Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Panel Académico Digital</h1>
+
+        <p>
+            Sistema web para registrar solicitudes académicas 
+            y consultar información universitaria.
+        </p>
+    </header>
+
+
+    <main>
+
+
+        <!-- SECCIÓN FORMULARIO -->
+        <section>
+
+            <h2>Registrar solicitud académica</h2>
+
+            <form id="formularioSolicitud">
+
+                <label>
+                    Nombre completo:
+                </label>
+
+                <input 
+                    type="text" 
+                    id="nombre"
+                    placeholder="Ingrese su nombre">
+
+
+                <label>
+                    Correo electrónico:
+                </label>
+
+                <input 
+                    type="email" 
+                    id="correo"
+                    placeholder="Ingrese su correo">
+
+
+                <label>
+                    Edad:
+                </label>
+
+                <input 
+                    type="number" 
+                    id="edad"
+                    placeholder="Ingrese su edad">
+
+
+                <label>
+                    Tipo de solicitud:
+                </label>
+
+                <select id="tipo">
+
+                    <option value="">
+                        Seleccione una opción
+                    </option>
+
+                    <option value="Certificado">
+                        Certificado
+                    </option>
+
+                    <option value="Matricula">
+                        Matrícula
+                    </option>
+
+                    <option value="Beca">
+                        Beca
+                    </option>
+
+                    <option value="Cambio de carrera">
+                        Cambio de carrera
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Descripción:
+                </label>
+
+                <textarea 
+                    id="descripcion"
+                    placeholder="Explique su solicitud">
+                </textarea>
+
+
+                <button type="submit">
+                    Registrar solicitud
+                </button>
+
+
+            </form>
+
+
+            <p id="mensaje"></p>
+
+        </section>
+
+
+
+
+        <!-- SECCIÓN API -->
+        <section>
+
+            <h2>
+                Consulta de universidades
+            </h2>
+
+
+            <p>
+                Ingrese un país para consultar universidades.
+            </p>
+
+
+            <input 
+                type="text"
+                id="pais"
+                placeholder="Ejemplo: Ecuador">
+
+
+            <button id="botonBuscar">
+                Buscar universidades
+            </button>
+
+
+            <div id="resultadoAPI">
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- SECCIÓN LOCAL STORAGE -->
+        <section>
+
+            <h2>
+                Solicitudes guardadas
+            </h2>
+
+
+            <div id="solicitudesGuardadas">
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
