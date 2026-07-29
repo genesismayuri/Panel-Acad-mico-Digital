@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Académico Digital</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>Panel Académico Digital</h1>
+
+    <p>
+        Plataforma interactiva para registrar solicitudes académicas,
+        consultar información universitaria y guardar datos importantes.
+    </p>
+
+</header>
+
+
+
+
+<main>
+
+
+
+<section>
+
+    <h2>Registrar solicitud académica</h2>
+
+
+    <form id="formularioSolicitud">
+
+
+        <label>
+            Nombre completo:
+        </label>
+
+        <input 
+            type="text" 
+            id="nombre"
+            placeholder="Ingrese su nombre completo">
+
+
+
+        <label>
+            Correo electrónico:
+        </label>
+
+        <input 
+            type="email"
+            id="correo"
+            placeholder="Ingrese su correo electrónico">
+
+
+
+        <label>
+            Edad:
+        </label>
+
+        <input 
+            type="number"
+            id="edad"
+            placeholder="Ingrese su edad">
+
+
+
+        <label>
+            Tipo de solicitud:
+        </label>
+
+
+        <select id="tipo">
+
+            <option value="">
+                Seleccione una opción
+            </option>
+
+
+            <option value="Certificado">
+                Certificado
+            </option>
+
+
+            <option value="Matricula">
+                Matrícula
+            </option>
+
+
+            <option value="Beca">
+                Beca
+            </option>
+
+
+            <option value="Cambio de carrera">
+                Cambio de carrera
+            </option>
+
+
+        </select>
+
+
+
+
+        <label>
+            Descripción de la solicitud:
+        </label>
+
+
+        <textarea 
+            id="descripcion"
+            placeholder="Escriba la descripción de su solicitud">
+        </textarea>
+
+
+
+
+        <button type="submit">
+            Registrar solicitud
+        </button>
+
+
+    </form>
+
+
+    <p id="mensaje"></p>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+    <h2>
+        Consulta de información universitaria
+    </h2>
+
+
+    <p>
+        Consulte universidades utilizando una API pública.
+    </p>
+
+
+
+    <input 
+        type="text"
+        id="pais"
+        placeholder="Ingrese un país">
+
+
+    <button id="botonBuscar">
+        Buscar universidades
+    </button>
+
+
+
+    <div id="resultadoAPI">
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+    <h2>
+        Solicitudes guardadas
+    </h2>
+
+
+    <div id="solicitudesGuardadas">
+
+    </div>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+<script type="module" src="./JS/main.js"></script>
+
+
+</body>
+
+
+</html>
