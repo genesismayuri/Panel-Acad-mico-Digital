@@ -7,31 +7,34 @@
 
     <title>Panel Académico Digital</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 
 <body>
 
     <header>
+
         <h1>Panel Académico Digital</h1>
 
         <p>
             Sistema web para registrar solicitudes académicas 
             y consultar información universitaria.
         </p>
+
     </header>
+
 
 
     <main>
 
-
-        <!-- SECCIÓN FORMULARIO -->
         <section>
 
             <h2>Registrar solicitud académica</h2>
 
+
             <form id="formularioSolicitud">
+
 
                 <label>
                     Nombre completo:
@@ -58,7 +61,7 @@
                 </label>
 
                 <input 
-                    type="number" 
+                    type="number"
                     id="edad"
                     placeholder="Ingrese su edad">
 
@@ -92,14 +95,17 @@
                 </select>
 
 
+
                 <label>
                     Descripción:
                 </label>
+
 
                 <textarea 
                     id="descripcion"
                     placeholder="Explique su solicitud">
                 </textarea>
+
 
 
                 <button type="submit">
@@ -112,13 +118,12 @@
 
             <p id="mensaje"></p>
 
+
         </section>
 
 
-
-
-        <!-- SECCIÓN API -->
         <section>
+
 
             <h2>
                 Consulta de universidades
@@ -130,15 +135,18 @@
             </p>
 
 
-            <input 
+
+            <input
                 type="text"
                 id="pais"
                 placeholder="Ejemplo: Ecuador">
 
 
+
             <button id="botonBuscar">
                 Buscar universidades
             </button>
+
 
 
             <div id="resultadoAPI">
@@ -149,10 +157,8 @@
         </section>
 
 
-
-
-        <!-- SECCIÓN LOCAL STORAGE -->
         <section>
+
 
             <h2>
                 Solicitudes guardadas
@@ -171,9 +177,8 @@
     </main>
 
 
+    <script type="module" src="./JS/main.js"></script>
 
-
-    <script type="module" src="main.js"></script>
 
 </body>
 
