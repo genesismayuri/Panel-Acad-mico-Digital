@@ -1,3 +1,17 @@
+import { buscarUniversidades } from "./api.js";
+
 form.addEventListener("submit", registrarSolicitud);
 
-botonBuscar.addEventListener("click", buscarUniversidades);
+
+async function consultarUniversidades(){
+
+    const pais = document.getElementById("pais").value;
+
+    const universidades = await buscarUniversidades(pais);
+
+    console.log(universidades);
+
+}
+
+
+botonBuscar.addEventListener("click", consultarUniversidades);
