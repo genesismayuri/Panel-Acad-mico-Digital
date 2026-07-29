@@ -1,6 +1,6 @@
-export async function buscarUniversidades(pais) {
+export async function buscarUniversidades(pais){
 
-    try {
+    try{
 
         const respuesta = await fetch(
             `http://universities.hipolabs.com/search?country=${pais}`
@@ -13,13 +13,11 @@ export async function buscarUniversidades(pais) {
         return datos;
 
 
-    } catch (error) {
+    }catch(error){
 
-
-        console.log("Error al consultar API:", error);
+        console.log("Error al consultar la API:", error);
 
         return [];
-
 
     }
 
